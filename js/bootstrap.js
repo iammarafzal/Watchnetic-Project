@@ -4440,3 +4440,12 @@
 
 }));
 //# sourceMappingURL=bootstrap.js.map
+
+// Start of FAQs page
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+      item.classList.toggle('active');
+  });
+});
+
+// End of FAQs page
