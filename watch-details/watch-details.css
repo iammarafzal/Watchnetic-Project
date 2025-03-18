@@ -148,6 +148,17 @@
   margin: 40px 0;
 }
 
+.watch-container h1 {
+  font-weight: 800;
+}
+.watch-container h2 {
+  font-weight: 600;
+}
+
+.watch-container h3 {
+  font-weight: 300;
+}
+
 .details-specs, .watch-description {
   flex: 1;
   min-width: 300px;
