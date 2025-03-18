@@ -1,0 +1,13 @@
+.about_section_page img {
+  max-width: 40%;
+  height: auto; /* Ensure the height is auto to maintain aspect ratio */
+  margin: 0 20px 20px 0;
+  float: left;
+  animation: fadeIn 1.5s ease-in-out;
+  clear: both; /* Ensure the image does not overlap with the footer */
+}
+
+.about_section_page img:last-of-type {
+  clear: both; /* Ensure the last image clears any floats */
+  margin-bottom: 40px; /* Add extra margin to ensure space before the footer */
+} 

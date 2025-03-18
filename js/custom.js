@@ -39,3 +39,23 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+$(document).ready(function() {
+    console.log("FAQ script loaded"); // Debugging line
+    
+    // FAQ Toggle functionality
+    $('.faq_question').on('click', function() {
+        console.log("FAQ question clicked"); // Debugging line
+        
+        let $item = $(this).parent('.faq_item');
+        
+        if ($item.hasClass('active')) {
+            // Close this item
+            $item.removeClass('active');
+        } else {
+            // Close all items and open this one
+            $('.faq_item').removeClass('active');
+            $item.addClass('active');
+        }
+    });
+});
